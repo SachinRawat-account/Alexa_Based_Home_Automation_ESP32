@@ -8,7 +8,8 @@ With this ESP32 project, you can also control appliances, and fan speed without 
 
 ## Screenshots
 
-![ESP32-Bluetooth-IoT-Project-p5-1536x864-transformed_cleanup](https://github.com/SachinRawat-account/Alexa_based_home_automation_ESP32/assets/117103811/3c32b375-f1f3-4304-9944-367bcd9a11fb)
+![Connection](https://github.com/SachinRawat-account/Alexa_Based_Home_Automation_ESP32/assets/117103811/45d25b21-0b83-4cbf-a33c-c13268902804)
+
 
 
 
