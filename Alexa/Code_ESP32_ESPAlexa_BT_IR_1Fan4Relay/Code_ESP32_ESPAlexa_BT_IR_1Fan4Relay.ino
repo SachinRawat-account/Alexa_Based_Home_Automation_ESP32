@@ -7,8 +7,8 @@
  **********************************************************************************/
 
 // WiFi Credentials
-const char* ssid = "Curiosity tree 4g";
-const char* password = "sachinneha#93";
+const char* ssid = "OFFICE.KEYSS.IN";
+const char* password = "J9Rs^XoHeXVyXJd6^d";
 
 // device names
 String Device_1_Name = "Night Lamp";
@@ -221,6 +221,8 @@ boolean connectWifi()
   Serial.print("Connecting...");
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
+    digitalWrite(wifiLed, LOW); //Turn off WiFi LED
+    blinkLED(); // Blink LED
     Serial.print(".");
     if (i > 20) {
       state = false; break;
@@ -582,6 +584,14 @@ void loop()
 
   ir_remote(); //IR remote Control
   bluetooth_control(); //Bluetooth Control
+}
+
+void blinkLED()
+{
+  static int ledState = LOW;
+  ledState = !ledState;
+  digitalWrite(wifiLed, ledState);
+  // delay(500);
 }
 
 void fanRegularor(){
